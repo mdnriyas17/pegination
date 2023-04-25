@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagination</title>
-    <link rel="stylesheet" href="Day15Task.css">
-</head>
-
-<body>
-    <script src="script.js"></script>
-</body>
-
+    
+    <link rel="stylesheet" href="./style.css" />
+      
+  </head>
+  <body>
+    <h1 id="title" class="text-center">Pagination</h1>
+    <p id="description">Pagination create using DOM</p>
+    <div id="container" class="table-responsive">
+      <table id="table" class="table" >
+        <thead id="tableHead">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div id="buttons" class="d-flex justify-content-center">
+      <button id="first" onclick="inputChange('firstPage')" value="0">
+        First
+      </button>
+      <button id="previous" onclick="inputChange('previousPage')">
+        Previous
+      </button>
+      <button onclick="inputChange('1')">2</button>
+      <button onclick="inputChange('2')">3</button>
+      <button onclick="inputChange('3')">4</button>
+      <button onclick="inputChange('4')">5</button>
+      <button onclick="inputChange('5')">6</button>
+      <button onclick="inputChange('6')">7</button>
+      <button onclick="inputChange('7')">8</button>
+      <button onclick="inputChange('8')">9</button>
+      <button onclick="inputChange('9')">10</button>
+      <button id="next" onclick="inputChange('next')">Next</button>
+    </div>
+    <script src="./script.js" ></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>  
+  </body>
 </html>
